@@ -1,0 +1,17 @@
+@font-face{ font-family: "Demos LT";
+            src: url("file:///android_asset/fonts/Demos_LT.otf");
+          }
+
+@font-face{ font-family: "Demos LT Fett";
+            src: url("file:///android_asset/fonts/Demos_LT.otf");
+            font-weight: bold;
+          }
+
+
+.demos{font-family: "Demos LT";
+      font-size: 50px;}
+
+.demosf{font-family: "Demos LT Fett";
+      font-size: 50px;}
+
+.fuffi{font-size: 50px;}
