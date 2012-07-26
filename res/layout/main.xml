@@ -5,31 +5,51 @@
     android:layout_height="fill_parent"
     android:background="#ededff" 
     >
-<TextView
-    android:id="@+id/demos_text"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Demos LT TextView"
-    android:textSize="50px"
-    android:textColor="#000000" 
+  <TextView
+      android:id="@+id/pfennig_otf_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pfennig OTF TextView QW"
+      android:textSize="50px"
+      android:textColor="#000000" 
+      />
 
-    />
+  <TextView
+      android:id="@+id/bold_pfennig_otf_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pfennig bold OTF TextView QW"
+      android:textSize="50px"
+      android:textColor="#000000" 
+      android:textStyle="bold"
+      />
+  <TextView
+      android:id="@+id/pfennig_ttf_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pfennig TTF TextView QW"
+      android:textSize="50px"
+      android:textColor="#000000" 
+      />
 
-<TextView
-    android:id="@+id/bold_demos_text"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Demos LT bold TextView"
-    android:textSize="50px"
-    android:textColor="#000000" 
-    android:textStyle="bold"
-
-    />
-
-    <WebView android:id="@+id/web_engine"  
-             android:layout_width="fill_parent"  
-             android:layout_height="fill_parent"  
-            />
-
+  <TextView
+      android:id="@+id/bold_pfennig_ttf_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pfennig bold TTF TextView QW"
+      android:textSize="50px"
+      android:textColor="#000000" 
+      android:textStyle="bold"
+      />
+  <WebView 
+      android:id="@+id/web_engine"  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      />
+  <WebView 
+      android:id="@+id/card"  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      />
 </LinearLayout>
 

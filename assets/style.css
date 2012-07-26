@@ -1,17 +1,16 @@
-@font-face{ font-family: "Demos LT";
-            src: url("file:///android_asset/fonts/Demos_LT.otf");
+@font-face{ font-family: "Pfennig";
+            src: url("file:///android_asset/fonts/Pfennig.otf");
           }
 
-@font-face{ font-family: "Demos LT Fett";
-            src: url("file:///android_asset/fonts/Demos_LT.otf");
-            font-weight: bold;
+@font-face{ font-family: "PfennigT";
+            src: url("file:///android_asset/fonts/Pfennig.ttf");
           }
 
 
-.demos{font-family: "Demos LT";
+.pfennig{font-family: "Pfennig";
       font-size: 50px;}
 
-.demosf{font-family: "Demos LT Fett";
+.pfennigt{font-family: "PfennigT";
       font-size: 50px;}
 
 .fuffi{font-size: 50px;}
