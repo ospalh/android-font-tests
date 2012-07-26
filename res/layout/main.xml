@@ -51,5 +51,10 @@
       android:layout_width="fill_parent"  
       android:layout_height="wrap_content"  
       />
+  <WebView 
+      android:id="@+id/base_engine"  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      />
 </LinearLayout>
 

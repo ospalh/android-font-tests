@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.graphics.Typeface;
 import android.webkit.WebView;
+import android.content.res.AssetManager;
+import java.io.IOException; 
+import java.io.InputStream; 
 
 public class BoldOTFDemo extends Activity
 {
@@ -31,9 +34,32 @@ public class BoldOTFDemo extends Activity
        b_pf_t_txt.setTypeface(bold_pfennig_ttf_font);  
 
        WebView engine = (WebView) findViewById(R.id.web_engine);
-       engine.loadUrl("file:///android_asset/demo.html");
+
+        engine.loadUrl("file:///android_asset/demo.html");
        WebView card = (WebView) findViewById(R.id.card);
        card.loadUrl("file:///android_asset/card_demo.html");
+       WebView base_engine = (WebView) findViewById(R.id.base_engine);
+       String base_content = new String();
+
+ // To load text file
+       AssetManager assetManager = getAssets();
+       InputStream input;  
+       try {  
+          input = assetManager.open("demo.html");  
+              
+          int size = input.available();  
+          byte[] buffer = new byte[size];  
+          input.read(buffer);  
+          input.close();  
+  
+          // byte buffer into a string  
+          base_content = new String(buffer);  
+        } catch (IOException e) {  
+            // TODO Auto-generated catch block  
+            e.printStackTrace();  
+        }
+
+       base_engine.loadDataWithBaseURL("file:///android_asset/", base_content, "text/html", "utf-8", null);
 
     }
 }
